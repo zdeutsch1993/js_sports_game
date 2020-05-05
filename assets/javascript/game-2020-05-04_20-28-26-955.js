@@ -1,10 +1,6 @@
-let reset = 0
-const num_resets = document.querySelector("#num_resets");
-const reset_button = document.querySelector("#reset_button");
-reset_button.addEventListener("click", function() {
-  reset = reset + 1
-  num_resets.innerText = reset;
-})
+function myFunction() {
+  document.getElementById(".left").reset();
+}
 
 let goal = 0;
 let shots = 1;
