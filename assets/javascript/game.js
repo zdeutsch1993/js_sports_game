@@ -1,11 +1,15 @@
-let reset = 0
+
+let reset = 0;
 const num_resets = document.querySelector("#num_resets");
 const reset_button = document.querySelector("#reset_button");
 reset_button.addEventListener("click", function() {
   reset = reset + 1
   num_resets.innerText = reset;
+  teamone_numgoals.innerHTML = 0;
+  teamone_numshots.innerHTML = 0;
+  teamtwo_numgoals.innerHTML = 0;
+  teamtwo_numshots.innerHTML = 0;
 })
-
 let goal = 0;
 let shots = 1;
 const teamone_numshots = document.querySelector("#teamone_numshots");
@@ -21,7 +25,7 @@ teamone_shoot_button.addEventListener("click", function() {
       goal = goal + 1
       teamone_numgoals.innerText = goal;
     }
-    else {
+    else { +
       console.log("fail");
     }
 })
